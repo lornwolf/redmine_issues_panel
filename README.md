@@ -16,15 +16,11 @@ This is a plugin for Redmine to display issues by statuses and change it's statu
 `plugins/redmine_issues_panel` on your Redmine installation path.
 
 ```
-$ git clone https://github.com/redmica/redmine_issues_panel.git /path/to/redmine/plugins/redmine_issues_panel
+$ git clone https://github.com/lornwolf/redmine_issues_panel.git /path/to/redmine/plugins/redmine_issues_panel
 ```
 
-## Test
-
-```
-$ cd /path/to/redmine
-$ bundle exec rake redmine:plugins:test NAME=redmine_issues_panel RAILS_ENV=test
-```
+本插件只适用于Redmine4.1版，在Redmine4.0下运行时会出错。
+如果要在4.0下运行，需要手动添加一些4.1版才有的类和函数。目前在我的Redmine4.0环境下已成功运行。
 
 ## Uninstall
 
